@@ -85,6 +85,11 @@ a>.material-icons{
 	font-size: 60px;
 }
 
+a>.material-icons:hover{
+	background-color: orange;
+
+}
+
 a{
 	position: relative;
 	top:40px;
