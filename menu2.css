@@ -80,6 +80,10 @@ body
 
 }
 
+#add: hover{
+	background-color: black;
+}
+
 a>.material-icons{
 	color: #d2d2d2;
 	font-size: 60px;
