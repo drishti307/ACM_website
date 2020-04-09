@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Advaya 2020</title>
+    <link rel="stylesheet"  href="menu2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="extstyling.css"> <!--Add this for styling of footer-->
+<style >
+    body{
+    
+    background : url('main_1.jpg');
+    background-size: cover;
+    
+    
+  }
+</style>
+
+
+
+
+  </head>
+
+  <body>
+    
+      <div class="container" onclick="expand()">
+        <div class= "toggle" id="toggle"></div>
+        <i class="material-icons" id="add">add_circle_outline
+        </i>
+       </div>
+       <div class="menu" id="menu">
+        <div class="item">
+          <a href="index.html">
+            <i class="material-icons">home</i>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="EventsPage.html">
+            <i class="material-icons">event</i>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="schedule.html">
+            <i class="material-icons">schedule</i>
+          </a>
+        </div>
+
+
+        
+
+        <div class="item">
+          <a href="about_us.html">
+            <i class="material-icons">contacts</i>
+          </a>
+        </div>
+
+
+        <div class="item">
+          <a href="donate.html">
+            <i class="material-icons">how_to_vote</i>
+          </a>
+        </div>
+
+
+        <div class="item">
+          <a href="contact.html">
+            <i class="material-icons">contact_mail</i>
+          </a>
+        </div>
+
+        
+        
+
+       </div>
+
+
+       <script type="text/javascript">
+        var j=0;
+        var i=document.getElementById("menu").childNodes;
+        function expand(){
+          if(j==0){
+          document.getElementById("add").style.transform= 'rotate(45deg)';
+          document.getElementById("menu").style.transform= 'scale(1)';
+          i[1].style.transform='translateY(-160px)';
+          i[3].style.transform='translate(140px,-80px)';
+          i[5].style.transform='translate(140px,80px)';
+          i[7].style.transform='translateY(160px)';
+          i[9].style.transform='translate(-140px,80px)';
+          i[11].style.transform='translate(-140px,-80px)';
+          j=1;
+        }
+        else {
+          document.getElementById("add").style.transform= 'rotate(0deg)';
+          document.getElementById("menu").style.transform= 'scale(0.9)';
+          i[1].style.transform='translateY(0)';
+          i[3].style.transform='translate(0)';
+          i[5].style.transform='translate(0)';
+          i[7].style.transform='translateY(0)';
+          i[9].style.transform='translate(0)';
+          i[11].style.transform='translate(0)';
+          j=0;
+        }
+
+
+       }
+
+
+
+       </script>
+	   
+   
+        
+    
+    
+
+        
+        
+        <!--Script Tags Begin Here-->   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      
+
+
+
+  </body>
+  </html>
